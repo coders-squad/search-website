@@ -2,16 +2,20 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="search.js"></script>
     <title>food</title>
 </head>
 <body>
 
 <h1>Search About ...</h1>
 
-<form class="form-wrapper" action="/search" method="POST">
-    <input type="text" id="search" placeholder="Search for..." required>
+
+    <input type="text" id="search" placeholder="Search for..." oninput="auto()" name="search">
     <input type="submit" value="go" id="submit">
-</form>
+
+
 
 </body>
+
+
 </html>

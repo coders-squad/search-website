@@ -6,6 +6,13 @@ module.exports = {
     var fileContents = fs.readFileSync('./views/css/style.css', {encoding: 'utf8'});
     res.write(fileContents);
     res.end();
-  }
+  },
+  'GET /search.js':function(req,res){
+    res.writeHead(200, {'Content-type' : 'text/javascript'});
+    var fileContents = fs.readFileSync('./app/search.js', {encoding: 'utf8'});
+    res.write(fileContents);
+    res.end();
+  },
+  'POST /search':require('./app/search.js')
 
 }
