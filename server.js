@@ -7,7 +7,6 @@ http.createServer(function(req,res){
   var path = req.method +' '+ req.url;
 
   try{
-    // router['GET /styles.css'](req,res);
     router[path](req,res);
   }catch(err){
     console.log('Error'+err);
