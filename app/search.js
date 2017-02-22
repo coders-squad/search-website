@@ -1,11 +1,14 @@
+var myRequest = new XMLHttpRequest();
 
 
 function auto(){
+console.log("root")
+console.log("aaa")
+  myRequest.onreadystatechange = function() {
 
-    for (var j=0; j<roots.file.length; j++) {
-      console.log(roots.file[j]);
-    }
-    return -1;
+}
+myRequest.open("POST", "http://localhost:8079/auto",true);
+myRequest.send();
 
 
 
