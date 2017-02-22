@@ -6,7 +6,8 @@ function parseBody(req,callback) {
     body += data;
   });
   req.on('end', function() {
-    callback(undefined,qs.parse(body));
+
+    callback(undefined,body);
   });
 }
 
