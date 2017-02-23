@@ -1,5 +1,4 @@
 var http = require('http');
-//var https = require('https');
 var router = require('./router.js');
 var utils = require('./utils.js');
 
