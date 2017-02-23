@@ -20,7 +20,7 @@ function auto(){
 		}
 }
 
-myRequest.open("POST", "http://localhost:8079/auto",true);
+myRequest.open("POST", "https://coders-autocomplete.herokuapp.com/",true);
 myRequest.send(search);
 
 }
