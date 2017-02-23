@@ -21,11 +21,8 @@ function auto(){
 		}
 }
 
-<<<<<<< HEAD
-myRequest.open("POST","http://localhost:8079/auto",true);
-=======
+
 myRequest.open("POST","https://coders-autocomplete.herokuapp.com/auto",true);
->>>>>>> akram-project
 myRequest.send(search);
 
 }
