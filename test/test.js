@@ -25,3 +25,8 @@ test('POST /search should return string', function(t) {
           t.end();
       });
   });
+
+  test('GET /', function(t) {
+
+        t.end();
+    });
