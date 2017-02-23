@@ -3,6 +3,7 @@
 
 
 ## Search project
+#### Search about string in file, then returns all strings that match with entered string ..
 
 
 
