@@ -24,7 +24,7 @@ function auto() {
       }
   }
 
-  myRequest.open("POST", "http://search-webstie.herokuapp.com/auto", true);
+  myRequest.open("POST", "https://search-webstie.herokuapp.com/auto", true);
 
 
   myRequest.send(search);
