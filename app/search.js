@@ -6,10 +6,10 @@ function auto(){
   	myRequest.onreadystatechange = function() {
   		if (myRequest.readyState === 4) {
             if (myRequest.status === 200) {
-			  	var options = JSON.parse(myRequest.responseText);
+			  	var test = JSON.parse(myRequest.responseText);
 			  	var div = document.getElementById('words');
 				div.innerHTML = "";
-			    options.forEach(function(ele) {
+			    test.forEach(function(ele) {
 			        var opt = document.createElement("option");
 			        opt.setAttribute("value", ele);
 			        opt.textContent = ele;
@@ -20,7 +20,7 @@ function auto(){
 		}
 }
 
-myRequest.open("POST", "https://coders-autocomplete.herokuapp.com/",true);
+myRequest.open("POST", "http://coders-autocomplete.herokuapp.com/",true);
 myRequest.send(search);
 
 }
