@@ -20,10 +20,9 @@ if(found.length < 10){
   });
   res.writeHead({'Content-Type': 'text/xml; charset=utf-8'});
   console.log(res.parse);
-
   res.end(JSON.stringify(found));
-
-
   });
+
+  found = [];
 
 }
