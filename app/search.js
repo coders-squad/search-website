@@ -32,5 +32,5 @@ function auto() {
 
 myRequest.open("POST","https://coders-autocomplete.herokuapp.com/auto",true);
 myRequest.send(search);
-return search;
+//return search;
 }
