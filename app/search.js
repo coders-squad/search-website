@@ -21,7 +21,7 @@ function auto(){
 		}
 }
 
-myRequest.open("POST", "http://localhost:8079/auto" ||"https://coders-autocomplete.herokuapp.com/auto",true);
+myRequest.open("POST","https://coders-autocomplete.herokuapp.com/auto",true);
 myRequest.send(search);
 
 }
