@@ -7,7 +7,9 @@ http.createServer(function(req,res){
   var path = req.method +' '+ req.url;
 
   try{
+
     router[path](req,res);
+    
   }catch(err){
     console.log('Error'+err);
     res.end('Error Occured');

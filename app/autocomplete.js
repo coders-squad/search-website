@@ -7,17 +7,23 @@ var db = file.split("\n");
 module.exports = function(req,res){
   var found = [];
   utils.parseBody(req,function(err,body){
-  
-  db.reduce(function(acc,val,index){ 
+
+  db.reduce(function(acc,val,index){
+if(found.length < 10){
     if(db[index].startsWith(body)){
-      if(found.length < 10){
+
         found.push(db[index]);
+
       }
     }
+
   });
+  res.writeHead({'Content-Type': 'text/xml; charset=utf-8'});
+  console.log(res.parse);
+
   res.end(JSON.stringify(found));
+
+
   });
-  
-  found = [];
 
 }
