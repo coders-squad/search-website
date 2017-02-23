@@ -9,12 +9,12 @@ module.exports = function(req,res){
   utils.parseBody(req,function(err,body){
   
   db.reduce(function(acc,val,index){ 
-      if(db[index].startsWith(body)){
-        if(found.length < 10){
-          found.push(db[index]);
-        }
+    if(db[index].startsWith(body)){
+      if(found.length < 10){
+        found.push(db[index]);
       }
-    });
+    }
+  });
   res.end(JSON.stringify(found));
   });
   
