@@ -14,9 +14,12 @@ module.exports = {
     res.end();
   },
 
-  
+  'GET /test.js':function(req,res){
+    res.writeHead(200, {'Content-type' : 'text/javascript'});
+    var fileContents = fs.readFileSync('./app/test.js', {encoding: 'utf8'});
+    res.write(fileContents);
+    res.end();
+  },
 
   'POST /auto':require('./app/autocomplete.js')
-
-
 }
