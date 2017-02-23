@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-
-
-function auto(){
-
-    for (var j=0; j<roots.file.length; j++) {
-      console.log(roots.file[j]);
-    }
-    return -1;
-
-
-=======
 var myRequest = new XMLHttpRequest();
 
 
@@ -32,8 +20,8 @@ function auto(){
 		}
 }
 
-myRequest.open("POST", "https://localhost:8079/auto",true);
+myRequest.open("POST", "http://localhost:8079/auto",true);
 myRequest.send(search);
->>>>>>> 6ab908e183041b435b5c942d145cad1b1bd3527c
+
 
 }

@@ -13,10 +13,10 @@ module.exports = {
     res.write(fileContents);
     res.end();
   },
-<<<<<<< HEAD
-  'POST /search':require('./app/search.js')
-=======
+
+  'POST /search':require('./app/search.js'),
+
   'POST /auto':require('./app/autocomplete.js')
->>>>>>> 6ab908e183041b435b5c942d145cad1b1bd3527c
+
 
 }

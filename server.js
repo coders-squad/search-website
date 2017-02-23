@@ -1,9 +1,8 @@
 var http = require('http');
-var https = require('https');
 var router = require('./router.js');
 var utils = require('./utils.js');
 
-https.createServer(function(req,res){
+http.createServer(function(req,res){
 
   var path = req.method +' '+ req.url;
 
