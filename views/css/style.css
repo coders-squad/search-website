@@ -45,7 +45,7 @@ a {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    color: #999;
+    color: #000;
     float: left;
     font: 16px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
     height: 40px;
@@ -64,7 +64,7 @@ a {
 .form-wrapper #search:-moz-placeholder,
 .form-wrapper #search:-ms-input-placeholder,
 .form-wrapper #search::-webkit-input-placeholder {
-    color: #999;
+    color: #000;
     font-weight: normal;
 }
 

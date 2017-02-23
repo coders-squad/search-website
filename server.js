@@ -1,8 +1,9 @@
 var http = require('http');
+var https = require('https');
 var router = require('./router.js');
 var utils = require('./utils.js');
 
-http.createServer(function(req,res){
+https.createServer(function(req,res){
 
   var path = req.method +' '+ req.url;
 
@@ -10,7 +11,6 @@ http.createServer(function(req,res){
     router[path](req,res);
   }catch(err){
     console.log('Error'+err);
-    console.log('PATH'+path);
     res.end('Error Occured');
   }
 }).listen(process.env.PORT || 8079, function(){
