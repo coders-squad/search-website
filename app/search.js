@@ -24,13 +24,13 @@ function auto() {
         }
     }
 
-    myRequest.open("POST", "http://localhost:8079/auto", true);
+    // myRequest.open("POST", "http://localhost:8079/auto", true);
 
 
-    myRequest.send(search);
+    // myRequest.send(search);
 
 
-// myRequest.open("POST","https://coders-autocomplete.herokuapp.com/auto",true);
-// myRequest.send(search);
+myRequest.open("POST","https://coders-autocomplete.herokuapp.com/auto",true);
+myRequest.send(search);
 return search;
 }
