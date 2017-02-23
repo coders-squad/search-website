@@ -30,7 +30,7 @@ function auto() {
     myRequest.send(search);
 
 
-myRequest.open("POST","https://coders-autocomplete.herokuapp.com/auto",true);
-myRequest.send(search);
+// myRequest.open("POST","https://coders-autocomplete.herokuapp.com/auto",true);
+// myRequest.send(search);
 return search;
 }
