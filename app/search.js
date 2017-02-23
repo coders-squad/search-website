@@ -6,7 +6,6 @@ function auto(){
   	myRequest.onreadystatechange = function() {
   		if (myRequest.readyState === 4) {
             if (myRequest.status === 200) {
-            	console.log( myRequest.responseText);
 			  	var options = JSON.parse(myRequest.responseText);
 			  	var div = document.getElementById('words');
 				div.innerHTML = "";
@@ -21,7 +20,9 @@ function auto(){
 		}
 }
 
-myRequest.open("POST","https://coders-autocomplete.herokuapp.com/auto",true);
-myRequest.send(search);
 
+// myRequest.open("POST","https://coders-autocomplete.herokuapp.com/auto",true);
+myRequest.open("POST","http://localhost:8079/auto",true);
+myRequest.send(search);
+return search;
 }

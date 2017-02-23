@@ -11,4 +11,5 @@ test("check if the function auto sends the value of the input",function(t){
 		var inpVal = this.value;
 		t.deepEqual(auto(),inpVal,"it sends the value of the input");
 	}
+	
 });
