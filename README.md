@@ -3,11 +3,14 @@
 
 
 ## Search project
-#### Search about string in file, then returns all strings that match with entered string ..
+#### Search about string in file, then returns all strings that match with inserted string .. if the user click on any of the suggested results, it will be inserted.
 
 
+#### We used the tape module to make a test on the backend code.
 
 
+#### We used the tdd to test the frontend part of the project.
 
 
-Our Website on Heroku : https://search-website.herokuapp.com/
+#### we used Heroku to view our website online.
+Our Website on Heroku : https://coders-autocomplete.herokuapp.com/
