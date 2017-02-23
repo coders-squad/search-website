@@ -6,6 +6,7 @@ function auto(){
   	myRequest.onreadystatechange = function() {
   		if (myRequest.readyState === 4) {
             if (myRequest.status === 200) {
+            	console.log(myRequest.responseText);
 			  	var options = JSON.parse(myRequest.responseText);
 			  	var div = document.getElementById('words');
 				div.innerHTML = "";
