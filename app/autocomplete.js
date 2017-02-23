@@ -13,13 +13,16 @@ if(found.length < 10){
     if(db[index].startsWith(body)){
 
         found.push(db[index]);
-        console.log(db[index]);
+
       }
     }
 
   });
+  res.writeHead({'Content-Type': 'text/xml; charset=utf-8'});
+  console.log(res.parse);
 
   res.end(JSON.stringify(found));
+
 
   });
 

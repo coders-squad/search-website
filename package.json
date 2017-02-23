@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/coders-squad/search-website/issues"
   },
-  "homepage": "https://github.com/coders-squad/search-website#readme"
+  "homepage": "https://github.com/coders-squad/search-website#readme",
+  "dependencies": {
+    "shot": "^3.4.0",
+    "tape": "^4.6.3"
+  }
 }

@@ -6,14 +6,16 @@ function auto() {
     myRequest.onreadystatechange = function() {
         if (myRequest.readyState === 4) {
             if (myRequest.status === 200) {
-              
+              parser = new DOMParser();
+
+
                 var options = JSON.parse(myRequest.responseText);
                 var div = document.getElementById('words');
                 div.innerHTML = "";
                 options.forEach(function(ele) {
                     var opt = document.createElement("option");
                     opt.setAttribute("value", ele);
-                    console.log(ele);
+                  
                     opt.textContent = ele;
                     div.appendChild(opt);
 
@@ -23,6 +25,7 @@ function auto() {
     }
 
     myRequest.open("POST", "http://localhost:8079/auto", true);
+
 
     myRequest.send(search);
 
