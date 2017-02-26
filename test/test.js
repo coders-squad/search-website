@@ -21,14 +21,14 @@ test('GET /: should return form html', function(t) {
     });
 });
 
-test('POST /search should return string', function(t) {
-    shot.inject(autocompleteHandler, request,function(res) {
-      t.deepEqual(res.payload,'["l","la","laager","laang","lab","labara","labarum","labba","labber","labdacism"]');
-          t.end();
-      });
-  });
+// test('POST /search should return string', function(t) {
+//     shot.inject(autocompleteHandler, request,function(res) {
+//       t.deepEqual(res.payload,'["l","la","laager","laang","lab","labara","labarum","labba","labber","labdacism"]');
+//           t.end();
+//       });
+//   });
 
-  test('GET /', function(t) {
+//   test('GET /', function(t) {
 
-        t.end();
-    });
+//         t.end();
+//     });
