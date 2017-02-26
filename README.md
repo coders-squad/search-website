@@ -1,4 +1,4 @@
-
+[![Code Climate](https://codeclimate.com/github/coders-squad/search-website/badges/gpa.svg)](https://codeclimate.com/github/coders-squad/search-website)
 
 ![alt text](https://github.com/coders-squad/pomodoro-timer/blob/master/STEAKHOUSE_1_.png)
 
