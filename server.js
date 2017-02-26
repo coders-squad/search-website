@@ -1,3 +1,5 @@
+'use strict';
+
 var http = require('http');
 var router = require('./router.js');
 var utils = require('./utils.js');
