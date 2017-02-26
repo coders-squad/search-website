@@ -1,5 +1,3 @@
-'use strict';
-
 var shot = require('shot');
 var test = require('tape');
 var rootHandler = require('../app/roots.js');
@@ -22,13 +20,8 @@ test('GET /: should return form html', function(t) {
 });
 
 // test('POST /search should return string', function(t) {
-//     shot.inject(autocompleteHandler, request,function(res) {
-//       t.deepEqual(res.payload,'["l","la","laager","laang","lab","labara","labarum","labba","labber","labdacism"]');
-//           t.end();
-//       });
+// shot.inject(autocompleteHandler, request,function(res) {
+//   t.deepEqual(res.payload,'["l","la","laager","laang","lab","labara","labarum","labba","labber","labdacism"]');
+//       t.end();
 //   });
-
-//   test('GET /', function(t) {
-
-//         t.end();
-//     });
+// });
