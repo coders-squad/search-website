@@ -9,7 +9,7 @@ http.createServer(function(req,res){
   try{
 
     router[path](req,res);
-    
+
   }catch(err){
     console.log('Error'+err);
     res.end('Error Occured');
