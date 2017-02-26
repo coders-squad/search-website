@@ -18,9 +18,7 @@ module.exports = function(req, res) {
             }
 
         });
-        res.writeHead({
-            'Content-Type': 'application/xml; charset=utf-8'
-        });
+      
         console.log(res.parse);
 
         res.end(JSON.stringify(found));
