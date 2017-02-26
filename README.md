@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/besarthoxhaj/cov-example.svg?branch=master)](https://travis-ci.org/besarthoxhaj/cov-example)
+
 ![alt text](https://github.com/coders-squad/pomodoro-timer/blob/master/STEAKHOUSE_1_.png)
 
 

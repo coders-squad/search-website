@@ -4,10 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-
     "test": "node test/test.js",
     "start": "node server.js"
-
   },
   "repository": {
     "type": "git",
@@ -22,5 +20,8 @@
   "dependencies": {
     "shot": "^3.4.0",
     "tape": "^4.6.3"
+  },
+  "devDependencies": {
+    "codeclimate-test-reporter": "^0.4.1"
   }
 }
