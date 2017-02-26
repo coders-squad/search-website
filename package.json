@@ -4,14 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-
     "test": "node test/test.js",
     "start": "node server.js"
-
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coders-squad/search-website.git"
+    "url": "git+https://github.com/coders-squad/search-website.git",
+    "cov": "npm run coverage && npm run cov:open",
+    "coverage": "./node_modules/.bin/istanbul cover ./test/runner.js",
+    "cov:open": "open ./coverage/lcov-report/index.html"
   },
   "author": "",
   "license": "ISC",
