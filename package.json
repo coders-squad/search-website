@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "node test/test.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "cov" : "./node_modules/.bin/istanbul cover test/test.js"
   },
   "repository": {
     "type": "git",
