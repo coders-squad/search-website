@@ -23,5 +23,8 @@
   "dependencies": {
     "shot": "^3.4.0",
     "tape": "^4.6.3"
+  },
+  "devDependencies": {
+    "codeclimate-test-reporter": "^0.4.1"
   }
 }
