@@ -1,3 +1,5 @@
+'use strict';
+
 var http = require('http');
 var router = require('./router.js');
 var utils = require('./utils.js');
@@ -9,7 +11,7 @@ http.createServer(function(req,res){
   try{
 
     router[path](req,res);
-    
+
   }catch(err){
     console.log('Error'+err);
     res.end('Error Occured');
