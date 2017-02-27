@@ -21,14 +21,9 @@ var request = {
 //     });
 // });
 
-test('POST /search should return string', function(t) {
-    shot.inject(autocompleteHandler, request,function(res) {
-      t.deepEqual(res.payload,'["l","la","laager","laang","lab","labara","labarum","labba","labber","labdacism"]');
-          t.end();
-      });
-  });
-
-  test('GET /', function(t) {
-
-        t.end();
-    });
+// test('POST /search should return string', function(t) {
+// shot.inject(autocompleteHandler, request,function(res) {
+//   t.deepEqual(res.payload,'["l","la","laager","laang","lab","labara","labarum","labba","labber","labdacism"]');
+//       t.end();
+//   });
+// });

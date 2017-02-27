@@ -1,6 +1,9 @@
-[![Code Climate](https://codeclimate.com/github/coders-squad/search-website/badges/gpa.svg)](https://codeclimate.com/github/coders-squad/search-website)
 
 ![alt text](https://github.com/coders-squad/pomodoro-timer/blob/master/STEAKHOUSE_1_.png)
+[![Build Status](https://travis-ci.org/coders-squad/search-website.svg?branch=master)](https://travis-ci.org/coders-squad/search-website)
+[![Code Climate](https://codeclimate.com/github/coders-squad/search-website/badges/gpa.svg)](https://codeclimate.com/github/coders-squad/search-website)
+
+
 
 
 
