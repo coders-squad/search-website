@@ -1,3 +1,5 @@
+'use strict';
+
 var shot = require('shot');
 var test = require('tape');
 var rootHandler = require('../app/roots.js');

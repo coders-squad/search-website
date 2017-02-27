@@ -9,6 +9,7 @@
     "cov": "npm run coverage && npm run cov:open",
     "coverage": "./node_modules/.bin/istanbul cover ./test/test.js",
     "cov:open": "open ./coverage/lcov-report/index.html"
+
   },
   "repository": {
     "type": "git",
